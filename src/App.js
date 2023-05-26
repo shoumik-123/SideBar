@@ -11,15 +11,14 @@ function App() {
   return (
       <Fragment>
           <BrowserRouter>
-              {/*<SideBar>*/}
+              <SideBar>
                   <Routes>
-                     <Route exact path="/sidebar" element={<SideBar/>}/>
                      <Route exact path="/" element={<DashboardPage/>}/>
                      <Route exact path="/Create" element={<CreatePage/>}/>
-                     <Route exact path="/Completed" element={<CompletedPage/>}/>
-                     <Route exact path="/Canceled" element={<CanceledPage/>}/>
+                     <Route exact path="/Complete" element={<CompletedPage/>}/>
+                     <Route exact path="/Cancel" element={<CanceledPage/>}/>
                 </Routes>
-              {/*</SideBar>*/}
+              </SideBar>
 
           </BrowserRouter>
       </Fragment>
